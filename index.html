@@ -1,94 +1,175 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduMaster</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EduLearn | Empower Your Future</title>
+  <!-- Google Fonts + Font Awesome CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
 <body>
-<header class="navbar">
-    <div class="logo">EduMaster</div>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#about">About</a>
-        <a href="#stats">Stats</a>
-        <a href="#teachers">Teachers</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo"><h2>Edu<span style="color:#2c9b77;">Learn</span></h2></div>
+      <div class="menu-icon" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#instructors">Instructors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn-primary" style="padding:8px 20px">Join now</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
-<!-- 2 HERO -->
-<section id="home" class="hero">
-    <h1>Learn Skills That Matter</h1>
-    <p>Modern education platform</p>
-    <button>Start Learning</button>
-</section>
 
-<!-- 3 COURSES -->
-<section id="courses" class="section">
-    <h2>Courses</h2>
-    <div class="grid">
-        <div class="card">Web Dev</div>
-        <div class="card">Design</div>
-        <div class="card">Marketing</div>
+<main>
+  <!-- SECTION 1: Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>Learn, grow & <span class="highlight">shape your future</span> with EduLearn</h1>
+          <p>Industry-leading courses, expert instructors, and a community that empowers you to achieve your dreams. Join thousands of successful learners worldwide.</p>
+          <div class="hero-buttons">
+            <a href="#courses" class="btn-primary">Explore courses <i class="fas fa-arrow-right"></i></a>
+            <a href="#about" class="btn-outline">Learn more</a>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="https://placehold.co/600x450/e9f3ef/2c9b77?text=Education+Matters" alt="Education illustration">
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- 4 ABOUT -->
-<section id="about" class="section dark">
-    <h2>About Us</h2>
-    <p>We help students grow skills globally.</p>
-</section>
-
-<!-- 5 STATS -->
-<section id="stats" class="section">
-    <div class="grid">
-        <div class="card counter" data-count="1200">0</div>
-        <div class="card counter" data-count="500">0</div>
-        <div class="card counter" data-count="300">0</div>
+  <!-- SECTION 2: About -->
+  <section id="about" class="section bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Transforming education globally</h2>
+        <p>We believe access to quality learning changes lives. Our mission is to deliver future-ready skills</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+        <div style="flex:1"><img src="https://placehold.co/500x380/e3f2ef/2c9b77?text=Our+Story" style="width:100%; border-radius: 28px;" alt="about"></div>
+        <div style="flex:1"><h3>Inspired by excellence, driven by innovation</h3><p>EduLearn was founded in 2019 with a single mission: make career-transforming education accessible to everyone. With 200+ industry partners and 50k+ alumni, we bridge the gap between academic theory and real-world demands.</p><a href="#courses" class="btn-primary" style="margin-top: 24px; display: inline-block;">Discover programs</a></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- 6 TEACHERS -->
-<section id="teachers" class="section">
-    <h2>Teachers</h2>
-    <div class="grid">
-        <div class="card">Ali</div>
-        <div class="card">Sara</div>
-        <div class="card">Ahmed</div>
+  <!-- SECTION 3: Featured Courses -->
+  <section id="courses" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular programs</h2>
+        <p>High-demand skills taught by industry experts</p>
+      </div>
+      <div class="courses-grid">
+        <div class="course-card"><i class="fab fa-python"></i><h3>Python & Data Science</h3><p>Master analytics, AI fundamentals, and real-world data projects.</p><span style="color:#2c9b77;">Start now →</span></div>
+        <div class="course-card"><i class="fas fa-cloud-upload-alt"></i><h3>Cloud & DevOps</h3><p>AWS, Linux, CI/CD pipelines, container orchestration (Docker/K8s).</p><span style="color:#2c9b77;">Explore →</span></div>
+        <div class="course-card"><i class="fas fa-laptop-code"></i><h3>Full Stack Web Dev</h3><p>React, Node.js, databases, and modern frontend/backend architecture.</p><span style="color:#2c9b77;">Enroll →</span></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- 7 REVIEWS -->
-<section id="reviews" class="section dark">
-    <h2>Reviews</h2>
-    <p>"Best platform ever"</p>
-</section>
-
-<!-- 8 PRICING -->
-<section id="pricing" class="section">
-    <h2>Pricing</h2>
-    <div class="grid">
-        <div class="card">Basic</div>
-        <div class="card">Pro</div>
-        <div class="card">Premium</div>
+  <!-- SECTION 4: Key Stats (Counter with JS) -->
+  <section id="stats" class="section bg-light">
+    <div class="container">
+      <div class="section-title"><h2>Our impact in numbers</h2><p>Trusted by learners and companies worldwide</p></div>
+      <div class="stats-wrapper">
+        <div class="stat-item"><div class="stat-number" data-count="12450">0</div><p>Active students</p></div>
+        <div class="stat-item"><div class="stat-number" data-count="218">0</div><p>Expert instructors</p></div>
+        <div class="stat-item"><div class="stat-number" data-count="380">0</div><p>Live courses</p></div>
+        <div class="stat-item"><div class="stat-number" data-count="97">0</div><p>% satisfaction rate</p></div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- 9 BLOG -->
-<section id="blog" class="section dark">
-    <h2>Blog</h2>
-    <p>Latest education trends</p>
-</section>
+  <!-- SECTION 5: Why Choose Us / Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-title"><h2>Why choose EduLearn</h2><p>We’re built differently for your success</p></div>
+      <div class="features-grid">
+        <div class="feature"><i class="fas fa-chalkboard-user"></i><h3>Industry-led training</h3><p>Learn directly from professionals shaping the industry.</p></div>
+        <div class="feature"><i class="fas fa-certificate"></i><h3>Recognized certificates</h3><p>Earn credentials that top employers value.</p></div>
+        <div class="feature"><i class="fas fa-clock"></i><h3>Self-paced learning</h3><p>Access content anytime, anywhere with lifetime access.</p></div>
+        <div class="feature"><i class="fas fa-users"></i><h3>Community support</h3><p>Join study groups, mentorship sessions & global network.</p></div>
+      </div>
+    </div>
+  </section>
 
-<!-- 10 CONTACT -->
-<section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: info@edu.com</p>
-</section>
+  <!-- SECTION 6: Testimonials -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title"><h2>What our students say</h2><p>Thousands of success stories</p></div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>The Cloud & DevOps course changed my career. Within months I landed a role at a top tech firm.</p><div class="student"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="student"><div><strong>Ayesha Khan</strong><br>Cloud Engineer</div></div></div>
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>Flexible learning, live projects, and amazing mentors. Best decision to upskill with EduLearn.</p><div class="student"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="student"><div><strong>Rayan Malik</strong><br>Full Stack Dev</div></div></div>
+        <div class="testimonial-card"><i class="fas fa-quote-left"></i><p>I loved the data science track. Practical assignments and career support helped me switch fields.</p><div class="student"><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="student"><div><strong>Zara Tariq</strong><br>Data Analyst</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Instructors -->
+  <section id="instructors" class="section">
+    <div class="container">
+      <div class="section-title"><h2>Meet our experts</h2><p>Guidance from leaders in education & tech</p></div>
+      <div class="instructors-grid">
+        <div class="instructor-card"><img src="https://randomuser.me/api/portraits/men/15.jpg" alt="instructor"><h3>Dr. Usman Raza</h3><p>AI Research Director</p><i class="fab fa-linkedin" style="color:#2c9b77;"></i></div>
+        <div class="instructor-card"><img src="https://randomuser.me/api/portraits/women/90.jpg" alt="instructor"><h3>Prof. Samira Asad</h3><p>Cloud & DevOps Lead</p><i class="fab fa-twitter"></i></div>
+        <div class="instructor-card"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="instructor"><h3>Hamza Chaudhry</h3><p>Senior Fullstack Engineer</p><i class="fab fa-github"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Upcoming Events / News -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-title"><h2>Upcoming events & webinars</h2><p>Level up with free live sessions</p></div>
+      <div class="events-list">
+        <div class="event-item"><div><i class="fas fa-chalkboard"></i> <strong>DevOps Bootcamp Launch</strong> – July 5, 2025</div><a href="#" class="btn-outline" style="padding:5px 16px;">Register</a></div>
+        <div class="event-item"><div><i class="fas fa-microphone-alt"></i> <strong>AI in Education Summit</strong> – July 18, 2025</div><a href="#" class="btn-outline">Join free</a></div>
+        <div class="event-item"><div><i class="fas fa-laptop"></i> <strong>Live coding: Full stack project</strong> – July 25, 2025</div><a href="#" class="btn-outline">Reserve seat</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 9: Call to Action / Contact form -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="cta-box">
+        <h3>Ready to start your journey?</h3>
+        <p style="margin: 18px auto; max-width: 500px;">Get early access to scholarships and new course drops. Join our newsletter today.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+          <input type="email" placeholder="Your email address" id="newsEmail">
+          <button id="subscribeBtn" class="btn-primary" style="background: white; color:#1F5E8E;">Subscribe →</button>
+        </div>
+        <p id="formMsg" style="margin-top: 20px; font-size:0.9rem;"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- SECTION 10: Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>EduLearn</h4><p>Empowering global learners with future-ready skills since 2019.</p></div>
+      <div class="footer-col"><h4>Quick links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#courses">Courses</a><a href="#instructors">Instructors</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="#">Career guides</a><a href="#">Scholarships</a><a href="#">Blog</a></div>
+      <div class="footer-col"><h4>Follow us</h4><a href="#"><i class="fab fa-facebook"></i> Facebook</a><a href="#"><i class="fab fa-instagram"></i> Instagram</a><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+    </div>
+    <div class="copyright">© 2025 EduLearn – Your partner in lifelong education. All rights reserved.</div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
